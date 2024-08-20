@@ -19,10 +19,10 @@ layout:
 
 # Welcome
 
-Welcome to the GitBook Starter Template! Here you'll get an overview of all the amazing features GitBook offers to help you build beautiful, interactive documentation.
+Welcome to the Felix Knowledge Center, where you can learn everything about the Felix platform. From the basic concepts to the more intricate technical details, our goal is to support you getting the most value out of Felix.
 
-You'll see some of the best parts of GitBook in action — and find help on how you can turn this template into your own.
+This is a living document, and we are constantly updating it with new content. If you have any questions or suggestions, please reach out to us at [support@felixapp.xyz](mailto:support@felixapp.xyz).
 
-### Jump right in
+### Getting Started
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Getting Started</strong></td><td>Create your first site</td><td><a href=".gitbook/assets/1.png">1.png</a></td><td></td><td><a href="getting-started/quickstart.md">quickstart.md</a></td></tr><tr><td><strong>Basics</strong></td><td>Learn the basics of GitBook</td><td><a href=".gitbook/assets/2.png">2.png</a></td><td></td><td><a href="broken-reference">Broken link</a></td></tr><tr><td><strong>Publish your docs</strong></td><td>Share your docs online</td><td><a href=".gitbook/assets/3.png">3.png</a></td><td></td><td><a href="getting-started/publish-your-docs.md">publish-your-docs.md</a></td></tr></tbody></table>
+We recommend starting with the [Felix Overview](/getting-started/overview) section to get a high-level understanding of the platform. From there, you can dive into the more detailed sections that interest you the most.
