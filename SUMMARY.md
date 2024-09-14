@@ -6,6 +6,7 @@
 
 * [Overview](getting-started/overview.md)
 * [Run Your First Lottery](getting-started/your-first-lottery.md)
+* [Disclaimer](getting-started/disclaimer.md)
 
 ## Technical
 
