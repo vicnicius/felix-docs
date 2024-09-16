@@ -1,8 +1,6 @@
 # Running a Successful Felix Lottery
 
 {% hint style="warning" %}
-### Disclaimer
-
 Before moving on, check the Felix Lottery overview to understand the basic concepts.
 
 Nothing on this document is financial advice. The information provided is for educational purposes only. You should always research and consider seeking professional advice before making financial decisions.
