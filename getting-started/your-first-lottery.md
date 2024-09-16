@@ -1,6 +1,8 @@
 # Your First Lottery
 
-To run your first Felix Lottery, head to [/start](https://preview.felixapp.xyz/start). The step-by-step wizard will guide you through the setup of a Lottery. On the first page, you'll choose the following attributes:
+Before running your first Felix Lottery, make sure you've went through the documentation and that you have a solid understanding of how Felix Lotteries work. Pay special attention to the [Running A Successful Lottery](/getting-started/running-a-successful-lottery) guide and if you have any questions, reach out to the team and we'll be happy to support you.
+
+To run your first Felix Lottery, head to [/start](https://www.felixapp.xyz/start). The step-by-step wizard will guide you through the setup of a Lottery. On the first page, you'll choose the following attributes:
 
 ### A unique name for your Lottery
 You must choose a unique name for the contract and its corresponding ticket NFT. When creating this name, use only characters, numbers, and hyphens.
