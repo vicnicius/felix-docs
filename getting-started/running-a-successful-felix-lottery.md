@@ -8,6 +8,10 @@ Nothing on this document is financial advice. The information provided is for ed
 Before participating in Felix Lotteries, check your local laws and regulations. Felix is not responsible for any legal issues that may arise.
 {% endhint %}
 
+{% hint style="warning" %}
+This guide is still a draft. Please do your research and let us know if you spot any errors.
+{% endhint %}
+
 {% hint style="danger" %}
 When we talk about the expected return in this guide, we mean it in **probabilistic** terms. If you ran 10,000s of this Lottery with these Lotterytes, you would get this value back on average.&#x20;
 
