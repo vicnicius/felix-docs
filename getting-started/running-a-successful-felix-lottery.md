@@ -71,7 +71,7 @@ To manage this risk effectively, Felix Lottery creators must carefully consider 
 The probabilistic break-even for your lottery is the exact point where the chances of a winning ticket multiplied by the revenue from sales equal the investment you have locked in the prize pool. Mathematically, we can express it as:
 
 $$
-1/10^d * tp * ts = i
+(1 - 1/10^d) * tp * ts \approx i
 $$
 
 Where:
@@ -89,10 +89,10 @@ Imagine you're investing 1000 STX in a Felix Lottery as the sole funder. The bre
 * 1000 STX Funded
 * Lottery Difficulty: 3
 * Ticket Price: 1 STX
-* Tickets on Sale: 1000$
+* Tickets on Sale: 1000
 
 $$
-1/10^3 * 1 * 1000 = 1000
+(1 - 1/10^3) * 1 * 1000 \approx 1000
 $$
 
 This equation holds, so your Lottery would break even in a perfect scenario. This means that if you sell all 1000 tickets, you'll recover your investment but make no profit. However, this Felix Lottery wouldn't be very attractive to its funder. After the 500th ticket sale, you've only recovered 50% of your investment, and the chances of keeping the locked prize (no one winning the lottery) are below 50%, decreasing with every sale.
@@ -126,7 +126,7 @@ If this Lottery sells all tickets, it would give its sole funder 2,000 STX in re
 Adding more funders changes the calculation slightly. With multiple funders, the amount you receive per sale is divided by the number of funders. For `n` funders, our formula becomes:
 
 $$
-1/10^d * tp * ts/n = l
+(1 - 1/10^d) * tp * ts/n \approx l
 $$
 
 Where `n` is the number of funders, and `l` is the locked STX per funder.
