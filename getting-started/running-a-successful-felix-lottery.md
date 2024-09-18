@@ -8,6 +8,14 @@ Nothing on this document is financial advice. The information provided is for ed
 Before participating in Felix Lotteries, check your local laws and regulations. Felix is not responsible for any legal issues that may arise.
 {% endhint %}
 
+{% hint style="danger" %}
+When we talk about expected return in this guide, that's in **probabilistic** terms. You can think of it as: if you run 10,000s of this Lottery with these attributes, on average you would get this value back.&#x20;
+
+**For any Lottery run there's the risk that you'll lose all your funds!**
+
+Be dilligent, do your own research, and only spend what you can afford to lose.
+{% endhint %}
+
 ## Introduction
 
 The Felix Lottery Platform offers users of the Stacks Blockchain a revolutionary take on lotteries: anyone can now run a Lottery, a position previously restricted to the State and a few selected others. Moreover, they can do it together with others in the community.
@@ -59,6 +67,10 @@ Funders have until the moment the Lottery starts to fund it. It's important to a
 Splitting the composition of the prize pool among multiple funders is an effective way to mitigate risk. However, it also reduces the potential reward, as the Lottery sales revenue is equally divided among Lottery runners.
 
 ### The Price
+
+{% hint style="info" %}
+When we talk about the ticket price, we're only considering the amount that goes to the Lottery itself. Felix charges a 10% fee on ticket buys, and those fees go directly to a wallet address set by the platform when the contract is generated.
+{% endhint %}
 
 Setting a fair price is essential for maximizing the number of players buying tickets for your lottery and, consequently, your revenue. Players won't be motivated to participate if a ticket is too expensive relative to the chances of winning or the prize. For example, paying 1 STX for a 1 in 1,000,000 chance of winning 5 STX is unlikely to attract many players.
 
@@ -171,6 +183,8 @@ ExpectedReturn = 2000 - (1/10^1) * 10 * 1000 = 1000
 $$
 
 This Lottery offers easy odds (guessing a single-digit number correctly), but the high ticket price limits the number of participants. If you can convince ten players to participate, perhaps some high-stakes enthusiasts, you'd achieve a 100% return on your investment.
+
+
 
 ## Summary
 
