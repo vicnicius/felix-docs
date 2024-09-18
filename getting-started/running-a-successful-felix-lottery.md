@@ -66,40 +66,39 @@ Conversely, if tickets are too cheap, you might end up in a situation where the 
 
 To manage this risk effectively, Felix Lottery creators must carefully consider ticket prices and the number of tickets for sale. A good approach is to find the "probabilistic break-even" point and then adjust your Lottery parameters from there.
 
-### Finding the Expected Return
+### The Expected Sales Return
 
-The expected return for your lottery is the probability of a ticket not winning the lottery times the ticket prize times the ticket sales. Mathematically, we can express it as:
+In a Felix Lottery, you'll always get the ticket sales revenue back at the end of the Lottery. So, the expected return from sales is a straightforward calculation:
 
 $$
-(1 - 1/10^d) * tp * ts \approx i
+TicketPrice * ExpectedSales = SalesRevenue
 $$
 
-Where:
+### Finding the Total Expected Return
 
-* `d` is the Lottery Difficulty
-* `tp` is the ticket price
-* `ts` is the number of tickets for sale
-* `i` is the investment locked in the prize pool
+Imagine the given Felix Lottery sold 1000 tickets:
 
-Here's an example:
-
-Imagine you're investing 1000 STX in a Felix Lottery as the sole funder. The break-even point could look like this:
-
-* 1 Funder
-* 1000 STX Funded
-* Lottery Difficulty: 3
+* Difficulty: 3
 * Ticket Price: 1 STX
-* Tickets on Sale: 1000
+* Locked Prize: 1000 STX
+
+In this Lottery, after the 500th ticket sale, the chances of keeping the locked prize (no one winning the lottery) are below 50%, decreasing with every sale. To have a probabilistic estimate of your ROI, you must equate the chances of not getting your locked STX back. This could be described as the expected sales return minus the chance of having a winning ticket times your locked STX.
 
 $$
-(1 - 1/10^3) * 1 * 1000 \approx 1000
+ExpectedReturn = SalesReturn - (1 /10 ^ d) * soldTickets * Locked STX
 $$
 
-This equation holds, so your Lottery would break even in a perfect scenario. This means that if you sell all 1000 tickets, you'll recover your investment but make no profit. However, this Felix Lottery wouldn't be very attractive to its funder. After the 500th ticket sale, you've only recovered 50% of your investment, and the chances of keeping the locked prize (no one winning the lottery) are below 50%, decreasing with every sale.
+In the example above, if we use the sales return we calculated before and apply it to our formula, we would have the following:
+
+$$
+ExpectedReturn = 1000 - (1 / 10 ^ 3) * 1000 * 1000 = 0
+$$
+
+On average, this Lottery is expected not to return you anything. It is a break-even Lottery.
 
 ### Building an Edge While Staying Attractive
 
-To create a more advantageous situation for funders, you can adjust any of the three variables: difficulty, price, or tickets on sale. Let's modify our previous example:
+To create a more advantageous situation for funders, you can adjust any of the three variables: difficulty, price, or tickets on sale on the player side, or change the amount you want to lock in for the prize. Let's modify our previous example:
 
 #### Option 1: Increasing Difficulty
 
@@ -107,13 +106,15 @@ To create a more advantageous situation for funders, you can adjust any of the t
 * 1000 STX Funded
 * Lottery Difficulty: 4 (increased from 3)
 * Ticket Price: 1 STX
-* Tickets on Sale: 1000
+* Ticket Sales: 1000
+
+Expected return:
 
 $$
-(1 - 1/10^4) * 1 * 1000 \approx 1000
+ExpectedReturn = 1000 - (1/10^4) * 1000 * 1000 = 900
 $$
 
-If the Lottery sells all tickets, you will receive 1000 STX back from sales, and your chances of keeping the locked prize will be 90%. This gives funders a 90% chance of a 100% return. For players, they'd have a 1 in 10,000 chance of winning 1,000 STX per 1 STX ticket, which is still reasonable compared to traditional lotteries.
+The expected return is, on average, 900 STX, a much better value than the previous one.
 
 #### Option 2: Increasing Ticket Price
 
@@ -121,23 +122,39 @@ If the Lottery sells all tickets, you will receive 1000 STX back from sales, and
 * 1000 STX Funded
 * Lottery Difficulty: 3
 * Ticket Price: 2 STX (increased from 1 STX)
-* Tickets on Sale: 1000
+* Tickets Sales: 1000
 
-If this Lottery sells all tickets, it would give its sole funder 2,000 STX in return. Even if only 500 tickets are sold, the funder would recover 1,000 STX and still have a 50% chance of keeping the locked STX. This creates an attractive edge for the funder while remaining appealing to players.
+If this Lottery sells all tickets, it would give its sole funder 2,000 STX in return. Even if only 500 tickets are sold, the funder would recover 1,000 STX and still have a 50% chance of keeping the locked STX. This creates an attractive edge for the funder while remaining appealing to players.&#x20;
+
+$$
+ExpectedReturn = 2000 - (1/10^3) * 1000 * 1000 = 1000
+$$
 
 ### Multiple Funders
 
-Adding more funders changes the calculation slightly. With multiple funders, the amount you receive per sale is divided by the number of funders. For `n` funders, our formula becomes:
+Adding more funders doesn't change the calculation, but you must use the total funded prize as lockedSTX and then split the return by the number of funders. Let's consider the following lottery:
+
+* 1 Funders
+* 150 STX locked per Funder
+* Difficulty: 3
+* Ticket Price: 2 STX
+* Ticket Sales: 100
 
 $$
-(1 - 1/10^d) * tp * ts/n \approx l
+ExpectedReturn = 200 - (1/10^3) * 100  * 300 = 170
 $$
 
-Where `n` is the number of funders, and `l` is the locked STX per funder.
+$$
+ExpectedReturnPerFunder = ExpectedReturn /funders = 170/2 = 85
+$$
 
-Multiple funders can help hedge risk while maintaining the Lottery's attractiveness. For example, a 1000 STX lottery is likely more appealing to players than a 100 STX one. You could create a 1000 STX lottery by combining it with nine other funders while committing only 100 of your STX.
+However, the key aspect of using multiple funders is that it can help hedge risk while maintaining the Lottery's attractiveness. For example, a 1000 STX lottery is likely more appealing to players than a 100 STX one. You could create a 1000 STX lottery by combining it with nine other funders while committing only 100 of your STX.
 
 ### Exotic Lotteries
+
+{% hint style="info" %}
+Notice each ticket must have a unique number. So, the maximum number of tickets you can sell is also limited. In a lottery with difficulty 1, you can only sell ten tickets; in difficulty 2, 100 tickets and so on...
+{% endhint %}
 
 With a good understanding of the balance between risk and attractiveness, you can create unique, attention-grabbing lotteries that remain balanced on the risk side. For example:
 
@@ -145,7 +162,13 @@ With a good understanding of the balance between risk and attractiveness, you ca
 * 1000 STX Funded
 * Lottery Difficulty: 1
 * Ticket Price: 200 STX
-* Tickets On Sale: 10
+* Tickets Sales: 10
+
+Expected value
+
+$$
+ExpectedReturn = 2000 - (1/10^1) * 10 * 1000 = 1000
+$$
 
 This Lottery offers easy odds (guessing a single-digit number correctly), but the high ticket price limits the number of participants. If you can convince ten players to participate, perhaps some high-stakes enthusiasts, you'd achieve a 100% return on your investment.
 
