@@ -9,11 +9,11 @@ Before participating in Felix Lotteries, check your local laws and regulations. 
 {% endhint %}
 
 {% hint style="danger" %}
-When we talk about expected return in this guide, that's in **probabilistic** terms. You can think of it as: if you run 10,000s of this Lottery with these attributes, on average you would get this value back.&#x20;
+When we talk about the expected return in this guide, we mean it in **probabilistic** terms. If you ran 10,000s of this Lottery with these Lotterytes, you would get this value back on average.&#x20;
 
-**For any Lottery run there's the risk that you'll lose all your funds!**
+**For any Lottery run, you'll risk losing all your funds!**
 
-Be dilligent, do your own research, and only spend what you can afford to lose.
+Be diligent, do your research, and only spend what you can afford to lose.
 {% endhint %}
 
 ## Introduction
@@ -22,13 +22,13 @@ The Felix Lottery Platform offers users of the Stacks Blockchain a revolutionary
 
 Running a Felix Lottery is an exciting way to have fun while making your STX (and other tokens) work for you. Reasons for using the Felix platform may vary: you might want to use it for charity, to fund other projects in the Stacks ecosystem, or to pursue personal goals. Regardless of your motivations, it's crucial to understand that running a Lottery comes with risks, and one must be extremely diligent.
 
-We've created this guide to help Lottery creators make informed decisions and ensure a great and fair experience for funders and players.
+We've created this guide to help Lottery creators make informed decisions and ensure an excellent and fair experience for funders and players.
 
 ## The Balance: Attractiveness vs Risk
 
-A Felix Lottery has two interested parties: funders and players. Funders kickstart the game, and they decide the key attributes of the lottery when they deploy the smart contract on the blockchain. The perfect Felix Lottery is designed to appeal to both players and funders. It must strike the right balance between the attractiveness to players and the risk funders take.
+A Felix Lottery has two interested parties: funders and players. Funders kickstart the game and decide the critical attributes of the Lottery when they deploy the Lottery smart contract on the blockchain. A perfectly designed Felix Lottery will appeal to both players and funders. It must strike the right balance between the attractiveness to players and the risk funders take.
 
-The first basic principle of a lottery is that the more players participate in your lottery, the more revenue you can generate. There are three attributes that Lottery creators can adjust to influence a lottery's attractiveness to players:
+The first basic principle of a lottery is that the more players participate in your Lottery, the more revenue you can generate. There are three attributes that Lottery creators can adjust to influence a lottery's attractiveness to players:
 
 1. How difficult it is to win
 2. The potential payout for winners
@@ -38,7 +38,7 @@ Let's take a closer look at each of these attributes:
 
 ### Difficulty
 
-The difficulty of a lottery is defined by the Felix Lottery difficulty setting. Difficulties range from one to ten. This directly translates to the number of digits the lottery-drawn number will be. For example, in a Felix Lottery of difficulty 1, a 1-digit number (from 0 to 9) will be drawn at its end to determine the winning ticket, if any. So a ticket has a one in ten chance of winning this Lottery. Here's a breakdown of the odds:
+The Felix Lottery difficulty setting defines the odds of a single ticket winning the Lottery. Difficulties range from one to ten. A Lottery difficulty directly translates to the number of digits the lottery-drawn number will be. For example, in a Felix Lottery of difficulty 1, a 1-digit number (from 0 to 9) will be drawn at its end to determine the winning ticket, if any. So a ticket has a one in ten chance of winning this Lottery. Here's a breakdown of the odds:
 
 | Difficulty | Chance of winning per ticket (%) | Odds of winning per ticket |
 | ---------- | -------------------------------- | -------------------------- |
@@ -57,14 +57,14 @@ For comparison, the chance of winning the grand prize in the Powerball Lottery i
 
 ### The Prize
 
-The lottery jackpot is a crucial factor in attracting players. Generally, the larger the jackpot, the more players will be drawn to the lottery. Felix Lottery runners control the jackpot size in two ways:
+The lottery jackpot is a crucial factor in attracting players. Generally, the larger the jackpot, the more players want to play the lottery. Felix LottLotteryners control the jackpot size in two ways:
 
-1. Defining what each funder will contribute to the prize pool
-2. Determining how many funders a lottery can have
+1. Defining what each Funder will contribute to the prize pool
+2. Determining how many funders a can have
 
-Funders have until the moment the Lottery starts to fund it. It's important to allow enough time for funders to lock their STX and build a substantial prize pool. Ideally, all lottery funders should be ready to send their fund transactions even before the Lottery is deployed. This ensures they know exactly what the prize pool will look like and can make more informed decisions on other attributes.
+Funders have until the moment the Lottery starts to fund it. It's essential to allow enough time for funders to lock their STX and build a substantial prize pool. Ideally, before the Lottery goes live, all Lottery funders should be ready to send their fund transactions, ensuring they know what the prize pool will look like and can make more informed decisions on other attributes.
 
-Splitting the composition of the prize pool among multiple funders is an effective way to mitigate risk. However, it also reduces the potential reward, as the Lottery sales revenue is equally divided among Lottery runners.
+Splitting the composition of the prize pool among multiple funders is an effective way to mitigate risk. However, it also reduces the potential reward, as the Lottery splits the sales revenue among Lottery runners when claiming them back.
 
 ### The Price
 
@@ -83,8 +83,10 @@ To manage this risk effectively, Felix Lottery creators must carefully consider 
 In a Felix Lottery, you'll always get the ticket sales revenue back at the end of the Lottery. So, the expected return from sales is a straightforward calculation:
 
 $$
-TicketPrice * ExpectedSales = SalesRevenue
+TicketPrice * ExpectedSales = ExpectedSalesRevenue
 $$
+
+###
 
 ### Finding the Total Expected Return
 
@@ -94,10 +96,10 @@ Imagine the given Felix Lottery sold 1000 tickets:
 * Ticket Price: 1 STX
 * Locked Prize: 1000 STX
 
-In this Lottery, after the 500th ticket sale, the chances of keeping the locked prize (no one winning the lottery) are below 50%, decreasing with every sale. To have a probabilistic estimate of your ROI, you must equate the chances of not getting your locked STX back. This could be described as the expected sales return minus the chance of having a winning ticket times your locked STX.
+In this Lottery, after the 500th ticket sale, the chances of keeping the locked prize (no one winning the lottery) are below 50%, decreasing with every sale. To have a probabilistic estimate of your ROI, you must equate the chances of not getting your locked STX back. Let's describe it as the expected sales return minus the possibility of having a winning ticket times your locked STX.
 
 $$
-ExpectedReturn = SalesReturn - (1 /10 ^ d) * soldTickets * Locked STX
+ExpectedReturn = ExpectedSalesReturn - (1 /10 ^ d) * soldTickets * Locked STX
 $$
 
 In the example above, if we use the sales return we calculated before and apply it to our formula, we would have the following:
@@ -136,7 +138,7 @@ The expected return is, on average, 900 STX, a much better value than the previo
 * Ticket Price: 2 STX (increased from 1 STX)
 * Tickets Sales: 1000
 
-If this Lottery sells all tickets, it would give its sole funder 2,000 STX in return. Even if only 500 tickets are sold, the funder would recover 1,000 STX and still have a 50% chance of keeping the locked STX. This creates an attractive edge for the funder while remaining appealing to players.&#x20;
+If this Lottery sells all tickets, it would give its sole Funder 2,000 STX in return. Even if you only sell 500 tickets, the Funder would recover 1,000 STX and still have a 50% chance of keeping the locked STX. A Lottery setup like this creates an attractive edge for the Funder while remaining appealing to players.&#x20;
 
 $$
 ExpectedReturn = 2000 - (1/10^3) * 1000 * 1000 = 1000
@@ -160,12 +162,12 @@ $$
 ExpectedReturnPerFunder = ExpectedReturn /funders = 170/2 = 85
 $$
 
-However, the key aspect of using multiple funders is that it can help hedge risk while maintaining the Lottery's attractiveness. For example, a 1000 STX lottery is likely more appealing to players than a 100 STX one. You could create a 1000 STX lottery by combining it with nine other funders while committing only 100 of your STX.
+However, the critical aspect of using multiple funders is that it can help hedge risk while maintaining the Lottery's attractiveness. For example, a 1000 STX lottery is likely more appealing to players than a 100 STX one. You could create a 1000 STX lottery by combining it with nine other funders while committing only 100 of your STX.
 
 ### Exotic Lotteries
 
 {% hint style="info" %}
-Notice each ticket must have a unique number. So, the maximum number of tickets you can sell is also limited. In a lottery with difficulty 1, you can only sell ten tickets; in difficulty 2, 100 tickets and so on...
+Notice each ticket must have a unique number. So, the maximum number of tickets you can sell is also limited. In a lottery with difficulty 1, you can only sell ten tickets; in difficulty 2, 100 tickets and so on.
 {% endhint %}
 
 With a good understanding of the balance between risk and attractiveness, you can create unique, attention-grabbing lotteries that remain balanced on the risk side. For example:
@@ -192,4 +194,4 @@ When running your Lottery, strive to balance the appeal to players with the leve
 
 Ensure you have funders ready before deploying your Lottery. Collaborating with other funders is often the best way to make your Lottery attractive while reducing the probability of losing money.
 
-If you have feedback suggestions or notice any errors, please reach out to the team at https://x.com/felixonbitcoin.
+If you have feedback suggestions or notice any errors, don't hesitate to contact the team at https://x.com/felixonbitcoin.
