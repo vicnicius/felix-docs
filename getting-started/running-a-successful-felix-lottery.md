@@ -66,9 +66,9 @@ Conversely, if tickets are too cheap, you might end up in a situation where the 
 
 To manage this risk effectively, Felix Lottery creators must carefully consider ticket prices and the number of tickets for sale. A good approach is to find the "probabilistic break-even" point and then adjust your Lottery parameters from there.
 
-### Finding the Probabilistic Break-Even
+### Finding the Expected Return
 
-The probabilistic break-even for your lottery is the exact point where the chances of a winning ticket multiplied by the revenue from sales equal the investment you have locked in the prize pool. Mathematically, we can express it as:
+The expected return for your lottery is the probability of a ticket not winning the lottery times the ticket prize times the ticket sales. Mathematically, we can express it as:
 
 $$
 (1 - 1/10^d) * tp * ts \approx i
@@ -108,6 +108,10 @@ To create a more advantageous situation for funders, you can adjust any of the t
 * Lottery Difficulty: 4 (increased from 3)
 * Ticket Price: 1 STX
 * Tickets on Sale: 1000
+
+$$
+(1 - 1/10^4) * 1 * 1000 \approx 1000
+$$
 
 If the Lottery sells all tickets, you will receive 1000 STX back from sales, and your chances of keeping the locked prize will be 90%. This gives funders a 90% chance of a 100% return. For players, they'd have a 1 in 10,000 chance of winning 1,000 STX per 1 STX ticket, which is still reasonable compared to traditional lotteries.
 
