@@ -12,3 +12,4 @@
 ## Technical
 
 * [The Lottery Smart Contract](technical/smart-contract.md)
+* [Security & Bug Bounty](technical/security-and-bug-bounty.md)
