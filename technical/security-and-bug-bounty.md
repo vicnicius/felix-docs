@@ -1,5 +1,7 @@
 # Security & Bug Bounty
 
+_This policy is valid from the 1st of November of 2024_
+
 At Felix, we take security very seriously. We've designed our smart contracts and the systems around them to help reduce the risk of vulnerabilities, and we have a roadmap of different tasks and tools we'll implement to harden our system more as we grow.&#x20;
 
 Among the many initiatives, we're starting a Bug Bounty program. Whether you are an experienced hacker, security researcher, or software engineer, we invite you to scrutinize and help us harden the security of our systems. In return, we'll distribute payouts to the reporters who responsibly disclose any bugs or security vulnerabilities they might find.
