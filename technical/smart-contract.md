@@ -1,6 +1,6 @@
 # The Lottery Smart Contract
 
-The Felix Lottery smart contract is based on a template. Below, you can find an example of how the contract looks like when deployed on-chain. There's also a version of the contract with tests available at [https://github.com/vicnicius/felix-contract](https://github.com/vicnicius/felix-contract).&#x20;
+The Felix Lottery smart contract is based on a template. Below, you can find an example of how the contract looks like when deployed on-chain. There's also a version of the contract with tests available at [https://github.com/vini-btc/felix-contract](https://github.com/vini-btc/felix-contract).&#x20;
 
 ```clarity
 ;; felix-100k
